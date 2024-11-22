@@ -7,7 +7,13 @@ private:
     float y;
 public:
     // 1. construtor padrao
-    Vetor2d();
+ //   Vetor2d();
+    // 2. construtor com argumentos
+    Vetor2d(float x_=0, float y_=0);
+
+    // 3. construtor de copia
+    Vetor2d(const Vetor2d &v);
+
     ~Vetor2d();
 
     void setX(float x_) ;
@@ -33,7 +39,6 @@ public:
 
     Vetor2d produto (float a);
     float produto (Vetor2d v1);
-
 
 };
 

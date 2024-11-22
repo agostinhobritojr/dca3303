@@ -9,9 +9,19 @@ float modulo(float x){
     return x;
 }
 
-Vetor2d::Vetor2d(){
+/*Vetor2d::Vetor2d(){
     std::cout << "Construtor padrao\n";
     x = y = 0;
+}*/
+
+Vetor2d::Vetor2d(float x_, float y_): x(x_), y(y_){
+//    x = x_; y = y_;
+    std::cout << "Construtor com argumentos\n";
+}
+
+Vetor2d::Vetor2d(const Vetor2d &v){
+    std::cout << "Construtor de copia\n";
+    x = v.x; y = v.y;
 }
 
 Vetor2d::~Vetor2d()
