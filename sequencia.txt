@@ -1,0 +1,8 @@
+Sequencia de estudos
+
+- Classes e objetos
+- Construtores e destrutores
+- Sobrecarga de metodos e funcoes
+- Ponteiros em C++
+- Alocacao dinamica em C++
+- Streams em c++

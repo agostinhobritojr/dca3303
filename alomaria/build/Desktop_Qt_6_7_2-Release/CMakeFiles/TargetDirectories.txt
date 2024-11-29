@@ -1,0 +1,7 @@
+/home/ambj/workspace/dca3303/alomaria/build/Desktop_Qt_6_7_2-Release/CMakeFiles/alomaria.dir
+/home/ambj/workspace/dca3303/alomaria/build/Desktop_Qt_6_7_2-Release/CMakeFiles/edit_cache.dir
+/home/ambj/workspace/dca3303/alomaria/build/Desktop_Qt_6_7_2-Release/CMakeFiles/rebuild_cache.dir
+/home/ambj/workspace/dca3303/alomaria/build/Desktop_Qt_6_7_2-Release/CMakeFiles/list_install_components.dir
+/home/ambj/workspace/dca3303/alomaria/build/Desktop_Qt_6_7_2-Release/CMakeFiles/install.dir
+/home/ambj/workspace/dca3303/alomaria/build/Desktop_Qt_6_7_2-Release/CMakeFiles/install/local.dir
+/home/ambj/workspace/dca3303/alomaria/build/Desktop_Qt_6_7_2-Release/CMakeFiles/install/strip.dir
