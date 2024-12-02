@@ -5,4 +5,7 @@ Sequencia de estudos
 - Sobrecarga de metodos e funcoes
 - Ponteiros em C++
 - Alocacao dinamica em C++
-- Streams em c++
+- Streams em c++ (saida)
+- Alocacao dinamica com Classes
+- Streams (entrada)
+- Gabaritos
