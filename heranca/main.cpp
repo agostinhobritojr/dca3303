@@ -6,6 +6,10 @@ int main(void){
     Motor m;
     m.setFabricante("ACME");
     m.setPreco(23.45);
+
+    m.Equipamento::setPreco(23.45);
+
+
     m.setNome("Speedatron");
     m.setPotencia(130);
     m.setVelocidade(280);
