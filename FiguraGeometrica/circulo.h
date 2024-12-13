@@ -5,8 +5,9 @@
 
 class Circulo : public FiguraGeometrica
 {
+    int x, y, raio;
 public:
-    Circulo();
+    Circulo(int x, int y, int raio, int z);
     void draw();
 };
 
