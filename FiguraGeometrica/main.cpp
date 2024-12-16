@@ -17,7 +17,7 @@ bool compare(FiguraGeometrica* f1, FiguraGeometrica* f2){
 }
 
 int main(){
-    FiguraGeometrica fig, *pfig;
+    FiguraGeometrica *pfig;
     std::vector<FiguraGeometrica *> figs;
     std::string s;
 

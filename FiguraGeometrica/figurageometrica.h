@@ -7,7 +7,9 @@ private:
 public:
     FiguraGeometrica(int z=1);
     virtual ~FiguraGeometrica(){}
-    virtual void draw();
+    // funcao virtual pura
+    // classe com pelo menos uma destas eh considerada ABSTRATA
+    virtual void draw() = 0;
     int getZ();
 };
 
