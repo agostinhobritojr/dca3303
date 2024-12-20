@@ -18,6 +18,9 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+public slots:
+    void copiaTexto();
+
 private:
     Ui::MainWindow *ui;
 };
