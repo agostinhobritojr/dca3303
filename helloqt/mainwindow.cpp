@@ -5,16 +5,33 @@
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
-{
+    , ui(new Ui::MainWindow){
     ui->setupUi(this);
 
-    connect(ui->pushButtonCopiar,
-            SIGNAL(clicked()),
-            this,
-            SLOT(copiaTexto()));
+    connect(ui->horizontalSliderAmpl,
+            SIGNAL(valueChanged(int)),
+            ui->widgetPlotter,
+            SLOT(mudaAmplitude(int)));
 
+    connect(ui->horizontalSliderFreq,
+            SIGNAL(valueChanged(int)),
+            ui->widgetPlotter,
+            SLOT(mudaFrequencia(int)));
 
+    connect(ui->horizontalSliderVeloc,
+            SIGNAL(valueChanged(int)),
+            ui->widgetPlotter,
+            SLOT(mudaVelocidade(int)));
+
+    connect(ui->widgetPlotter,
+            SIGNAL(mudaX(int)),
+            ui->lcdNumberX,
+            SLOT(display(int)));
+
+    connect(ui->widgetPlotter,
+            SIGNAL(mudaY(int)),
+            ui->lcdNumberY,
+            SLOT(display(int)));
 
 }
 
@@ -24,9 +41,7 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::copiaTexto(){
-    QString texto;
-    texto = ui->plainTextEditOrigem->toPlainText();
-    ui->plainTextEditDestino->setPlainText(texto);
+
 }
 
 
