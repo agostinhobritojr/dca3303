@@ -19,7 +19,7 @@ public:
     ~MainWindow();
 
 public slots:
-    void copiaTexto();
+    void config();
 
 private:
     Ui::MainWindow *ui;

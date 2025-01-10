@@ -13,6 +13,12 @@ Plotter::Plotter(QWidget *parent)
     teta = 0;
     timerId = startTimer(10);
     setMouseTracking(true);
+    background = QColor(255,255,200);
+}
+
+void Plotter::setBackground(QColor color){
+    background = color;
+    repaint();
 }
 
 void Plotter::paintEvent(QPaintEvent *e){
@@ -26,7 +32,7 @@ void Plotter::paintEvent(QPaintEvent *e){
     pen.setWidth(2);
     painter.setPen(pen);
 
-    brush.setColor(QColor(255,255,200));
+    brush.setColor(background);
     brush.setStyle(Qt::SolidPattern);
     painter.setBrush(brush);
 
@@ -56,6 +62,7 @@ void Plotter::paintEvent(QPaintEvent *e){
 void Plotter::timerEvent(QTimerEvent *e)
 {
     qDebug() << timerId << " " << e->timerId();
+    // killTimer(timerId);
     teta = teta + veloc;
     if(teta > 2*M_PI){
         teta = 0;

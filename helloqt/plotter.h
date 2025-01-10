@@ -4,17 +4,27 @@
 #include <QWidget>
 #include <QPaintEvent>
 
+/**
+ * @brief A classe Plotter desenha um seno na tela
+ */
+
 class Plotter : public QWidget
 {
     Q_OBJECT
 private:
     float a, w, teta, veloc;
     int timerId;
+    QColor background;
 public:
     explicit Plotter(QWidget *parent = nullptr);
+    void setBackground(QColor color);
 public slots:
     void paintEvent(QPaintEvent *e);
     void timerEvent(QTimerEvent *e);
+    /**
+     * @brief mudaAmplitude muda a amplitude do seno
+     * @param ampl serve para dizer qual a amplitude
+     */
     void mudaAmplitude(int ampl);
     void mudaFrequencia(int freq);
     void mudaVelocidade(int veloc);

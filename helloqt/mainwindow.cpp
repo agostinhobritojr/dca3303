@@ -2,6 +2,9 @@
 #include "ui_mainwindow.h"
 #include <QString>
 #include <QPlainTextEdit>
+#include <QMessageBox>
+#include "dialogconfig.h"
+#include <QColorDialog>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -33,6 +36,16 @@ MainWindow::MainWindow(QWidget *parent)
             ui->lcdNumberY,
             SLOT(display(int)));
 
+    connect(ui->actionQuit,
+            SIGNAL(triggered(bool)),
+            this,
+            SLOT(close()));
+
+    connect(ui->actionConfig,
+            SIGNAL(triggered(bool)),
+            this,
+            SLOT(config()));
+
 }
 
 MainWindow::~MainWindow()
@@ -40,8 +53,35 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::copiaTexto(){
+void MainWindow::config(){
+    DialogConfig d;
+    QMessageBox box;
+    QString texto;
 
+    QColorDialog colordialog;
+    colordialog.exec();
+    ui->widgetPlotter->setBackground(colordialog.currentColor());
+
+    /*
+    if( d.exec() == QDialog::Accepted){
+        int r, g, b;
+        r = d.getR();
+        g = d.getG();
+        b = d.getB();
+        texto = QString("R = ") +
+                QString().setNum(r)+QString("<br>")+
+                QString("G = ") +
+                QString().setNum(g)+QString("<br>")+
+                QString("B = ") +
+                QString().setNum(b);
+        ui->widgetPlotter->setBackground(QColor(r,g,b));
+    }
+    else{
+        texto = QString("Alo, <b>CANCEL</b>!");
+    }
+    box.setText(texto);
+    box.exec();
+*/
 }
 
 

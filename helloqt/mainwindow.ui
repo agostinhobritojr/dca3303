@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>580</width>
-    <height>530</height>
+    <height>382</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -156,28 +156,7 @@
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_5">
-      <item>
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Orientation::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButtonQuit">
-        <property name="text">
-         <string>Quit!</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <layout class="QHBoxLayout" name="horizontalLayout_5"/>
     </item>
    </layout>
   </widget>
@@ -190,8 +169,59 @@
      <height>23</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionConfig"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionConfig"/>
+   <addaction name="actionQuit"/>
+  </widget>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/iconeMorreu</normaloff>:/iconeMorreu</iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="toolTip">
+    <string>Mata o programa</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionConfig">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/iconeFiguras</normaloff>:/iconeFiguras</iconset>
+   </property>
+   <property name="text">
+    <string>Config</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
  </widget>
  <customwidgets>
   <customwidget>
@@ -201,24 +231,10 @@
    <container>1</container>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
  <connections>
-  <connection>
-   <sender>pushButtonQuit</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>682</x>
-     <y>516</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>479</x>
-     <y>216</y>
-    </hint>
-   </hints>
-  </connection>
   <connection>
    <sender>horizontalSliderAmpl</sender>
    <signal>valueChanged(int)</signal>
