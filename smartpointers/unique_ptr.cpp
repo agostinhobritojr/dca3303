@@ -1,6 +1,5 @@
 #include <iostream>
 #include <memory>
-#include <iostream>
 
 class Foo{
   float x, y;
