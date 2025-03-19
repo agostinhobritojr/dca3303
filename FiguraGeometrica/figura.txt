@@ -1,6 +1,0 @@
-retangulo 3 5 2 2 1
-circulo 3 5 1 2
-circulo 5 3 1 4
-reta 1 2 7 7 5
-circulo 5 5 1 3
- 

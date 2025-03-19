@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file alias="iconeFiguras">resources/quit.svg</file>
-        <file alias="iconeMorreu">resources/morreu.svg</file>
-    </qresource>
-</RCC>
