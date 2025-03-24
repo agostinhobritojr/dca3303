@@ -2,53 +2,12 @@
 
 void printBits(unsigned char c) {
   unsigned char bit;
-  bit = 128;
-  if (c & bit) {
-    printf("1");
-  } else {
-    printf("0");
-  }
-  bit = bit / 2;
-  if (c & bit) {
-    printf("1");
-  } else {
-    printf("0");
-  }
-  bit = bit / 2;
-  if (c & bit) {
-    printf("1");
-  } else {
-    printf("0");
-  }
-  bit = bit / 2;
-  if (c & bit) {
-    printf("1");
-  } else {
-    printf("0");
-  }
-  bit = bit / 2;
-  if (c & bit) {
-    printf("1");
-  } else {
-    printf("0");
-  }
-  bit = bit / 2;
-  if (c & bit) {
-    printf("1");
-  } else {
-    printf("0");
-  }
-  bit = bit / 2;
-  if (c & bit) {
-    printf("1");
-  } else {
-    printf("0");
-  }
-  bit = bit / 2;
-  if (c & bit) {
-    printf("1");
-  } else {
-    printf("0");
+  for (bit = 128; bit > 0; bit >>= 1) {
+    if (c & bit) {
+      printf("1");
+    } else {
+      printf("0");
+    }
   }
   printf("\n");
 }
@@ -56,7 +15,7 @@ void printBits(unsigned char c) {
 // int main(int argc, char* argv[])
 int main(void) {
   int a = 3, b = 4;
-  int c = 37;
+  int c = 129;
 
   printBits(c);
 
