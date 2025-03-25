@@ -3,30 +3,46 @@
 #include "reta.h"
 #include "circulo.h"
 #include "retangulo.h"
+#include <vector>
+#include <algorithm>
 
+bool compare(FiguraGeometrica* f1, FiguraGeometrica *f2){
+    return (f1->getOrdem() > f2->getOrdem());
+}
 
 int main(){
     FiguraGeometrica fig, *pfig;
-    Reta rt;
-    Circulo c;
-    Retangulo rg;
+    std::vector<FiguraGeometrica*> figs;
 
-    pfig = &fig;
-    pfig->draw();
+    figs.push_back(new Circulo());
+    figs.push_back(new Retangulo());
+    figs.push_back(new Reta());
+    figs.push_back(new Circulo());
+    figs.push_back(new Retangulo());
+    figs.push_back(new Reta());
+    figs.push_back(new Circulo());
+    figs.push_back(new Retangulo());
+    figs.push_back(new Reta());
 
-    pfig = &rt;
-    pfig->draw(); // POLIMORFISMO
+    for(auto fig : figs){
+        fig->setOrdem(rand()%100);
+    }
 
-    pfig = &c;
-    pfig->draw();
+    for(auto fig : figs){
+        std::cout << fig->getOrdem() << ": ";
+        fig->draw();
+    }
 
-    pfig = &rg;
-    pfig->draw();
-    /*
-    fig.draw();
-    rt.draw();
-    c.draw();
-    rg.draw();
-*/
+    std::sort(figs.begin(), figs.end(), compare);
+    std::cout << std::endl;
+
+    for(auto fig : figs){
+        std::cout << fig->getOrdem() << ": ";
+        fig->draw();
+    }
+
+    for(auto fig : figs){
+        delete fig;
+    }
     return 0;
 }
