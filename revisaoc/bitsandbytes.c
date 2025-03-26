@@ -1,16 +1,6 @@
 #include <stdio.h>  // diretiva de inclusao
 
-void printBits(unsigned char c) {
-  unsigned char bit;
-  for (bit = 128; bit > 0; bit >>= 1) {
-    if (c & bit) {
-      printf("1");
-    } else {
-      printf("0");
-    }
-  }
-  printf("\n");
-}
+void printBits(unsigned char c);
 
 // int main(int argc, char* argv[])
 int main(void) {
@@ -27,4 +17,15 @@ int main(void) {
     }
   */
   return 0;
+}
+void printBits(unsigned char c) {
+  unsigned char bit;
+  for (bit = 128; bit > 0; bit >>= 1) {
+    if (c & bit) {
+      printf("1");
+    } else {
+      printf("0");
+    }
+  }
+  printf("\n");
 }
