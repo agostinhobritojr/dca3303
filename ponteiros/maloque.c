@@ -7,6 +7,11 @@ int main(void) {
   // (int*) <= (void*)
   // x = (int*)malloc(n * sizeof(int));
   x = malloc(n * sizeof(int));
+
+  if (x == NULL) {
+    exit(0);
+  }
+
   printf("&x = %p\n", &x);
   printf(" x = %p\n", x);
   srand(time(0));
@@ -27,4 +32,17 @@ int main(void) {
   }
   printf("\n");
   free(x);
+  x = NULL;
+  free(x);
+
+  printf("passou aqui (free executado)\n");
+  /*
+  for (int i = 0; i < n; i++) {
+    x[i] = rand() % 100;
+  }
+  for (int i = 0; i < n; i++) {
+    printf("%d, ", x[i]);
+  }
+  printf("\n");
+  */
 }
