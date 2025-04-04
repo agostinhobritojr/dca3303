@@ -6,7 +6,7 @@ int main(void) {
   n = 10;
   x = (int*)malloc(n * sizeof(int));
   x = (int*)malloc(n * sizeof(int));
-
+  // srand(3);
   for (int i = 0; i < n; i++) {
     x[i] = rand() % 100;
   }
