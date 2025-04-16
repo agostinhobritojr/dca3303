@@ -7,7 +7,10 @@ struct cliente {
   int teste;
   char letra;
   int letra1;
+  char letra2;
+  int letra3;
 };
+
 int main(void) {
   struct cliente jose, *pc;
 
