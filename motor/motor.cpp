@@ -1,8 +1,15 @@
 #include "motor.h"
 #include <iostream>
 
-Motor::Motor(){
+// lista de inicializadores (colocados apos o nome do
+// metodo construtor)
+Motor::Motor() : Equipamento(100), potencia(300) {
     std::cout << "Construtor Motor\n";
+}
+
+Motor::Motor(float preco) : Equipamento(preco)
+{
+
 }
 
 Motor::~Motor(){
