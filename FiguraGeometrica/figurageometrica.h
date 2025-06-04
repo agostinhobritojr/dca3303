@@ -5,8 +5,12 @@ class FiguraGeometrica
 {
 public:
     FiguraGeometrica();
-    ~FiguraGeometrica();
-    virtual void draw();
+    // destrutor virtual: invoca-se o destrutor da subclasse
+    virtual ~FiguraGeometrica();
+    // funcao virtual: invoca-se a funcao da subclasse
+
+    // funcao virtual PURA
+    virtual void draw() = 0;
 };
 
 #endif // FIGURAGEOMETRICA_H

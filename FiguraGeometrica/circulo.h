@@ -3,11 +3,13 @@
 
 #include "figurageometrica.h"
 
-class Circulo : public FiguraGeometrica
-{
+class Circulo : public FiguraGeometrica{
+private:
+    float centro_x, centro_y, raio;
 public:
-    Circulo();
+    Circulo(float cx, float cy, float r);
     ~Circulo();
+    void draw();
 };
 
 #endif // CIRCULO_H

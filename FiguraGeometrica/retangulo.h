@@ -3,11 +3,12 @@
 
 #include "figurageometrica.h"
 
-class Retangulo : public FiguraGeometrica
-{
+class Retangulo : public FiguraGeometrica{
+    float xsup, ysup, larg, alt;
 public:
-    Retangulo();
+    Retangulo(float _xsup, float _ysup, float _larg, float _alt);
     ~Retangulo();
+    void draw();
 };
 
 #endif // RETANGULO_H

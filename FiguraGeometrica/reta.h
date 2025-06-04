@@ -3,10 +3,10 @@
 
 #include "figurageometrica.h"
 
-class Reta : public FiguraGeometrica
-{
+class Reta : public FiguraGeometrica{
+    float x0, y0, x1, y1;
 public:
-    Reta();
+    Reta(float x0, float y0, float x1, float y1);
     ~Reta();
     void draw();
 };
