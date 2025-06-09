@@ -6,11 +6,11 @@ Retangulo::Retangulo(float _xsup, float _ysup, float _larg, float _alt) {
     ysup = _ysup;
     larg = _larg;
     alt  = _alt;
-    std::cout << "Construtor Retangulo\n";
+ //   std::cout << "Construtor Retangulo\n";
 }
 
 Retangulo::~Retangulo(){
-    std::cout << "Destrutor Retangulo\n";
+ //   std::cout << "Destrutor Retangulo\n";
 }
 
 void Retangulo::draw()

@@ -5,11 +5,11 @@ Circulo::Circulo(float cx, float cy, float r) {
     centro_x = cx;
     centro_y = cy;
     raio = r;
-    std::cout << "Construtor Circulo\n";
+  //  std::cout << "Construtor Circulo\n";
 }
 
 Circulo::~Circulo(){
-    std::cout << "Destrutor Circulo\n";
+  //  std::cout << "Destrutor Circulo\n";
 }
 
 void Circulo::draw(){

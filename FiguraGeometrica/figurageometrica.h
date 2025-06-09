@@ -1,8 +1,9 @@
 #ifndef FIGURAGEOMETRICA_H
 #define FIGURAGEOMETRICA_H
 
-class FiguraGeometrica
-{
+class FiguraGeometrica{
+protected:
+    float r, g, b, a;
 public:
     FiguraGeometrica();
     // destrutor virtual: invoca-se o destrutor da subclasse

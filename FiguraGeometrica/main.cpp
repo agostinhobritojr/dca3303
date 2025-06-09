@@ -39,12 +39,24 @@ int main(){
 
     std::string s;
 
-    fin >> s ;
-    std::cout << s << std::endl;
-    if(s.compare("circulo")==0){
-        float x, y, r;
-        fin >> x >> y >> r;
-        figuras.push_back(new Circulo(x, y, r));
+    while(fin.good()){
+        fin >> s ;
+        if(!fin.good())
+            break;
+ //      std::cout << s << std::endl;
+        if(s.compare("circulo")==0){
+            float x, y, r;
+            fin >> x >> y >> r;
+            figuras.push_back(new Circulo(x, y, r));
+        } else if(s.compare("reta")==0){
+            float x0, y0, x1, y1;
+            fin >> x0 >> y0 >> x1 >> y1;
+            figuras.push_back(new Reta(x0,y0,x1,y1));
+        } else if(s.compare("retangulo")==0){
+            float x,y,larg,alt;
+            fin >> x >> y >> larg >> alt;
+            figuras.push_back(new Retangulo(x,y,larg,alt));
+        }
     }
 
     for(auto i : figuras){
