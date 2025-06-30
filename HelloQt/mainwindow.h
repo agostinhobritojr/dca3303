@@ -22,6 +22,7 @@ private:
 
 public slots:
     void mataTudo(void);
+    void copiaTexto(void);
 
 };
 #endif // MAINWINDOW_H

@@ -16,6 +16,11 @@ MainWindow::MainWindow(QWidget *parent)
             this,
             SLOT(mataTudo()));
 
+    connect(ui->pushButtonCopia,
+            SIGNAL(clicked()),
+            this,
+            SLOT(copiaTexto()));
+
 }
 
 MainWindow::~MainWindow()
@@ -30,3 +35,23 @@ void MainWindow::mataTudo(){
     m.exec();
     close();
 }
+
+void MainWindow::copiaTexto()
+{
+    ui->textEdit->setText(
+        "<b>"+
+        ui->lineEdit->text()
+        +"</b>");
+}
+
+
+
+
+
+
+
+
+
+
+
+
