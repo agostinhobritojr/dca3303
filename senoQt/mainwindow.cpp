@@ -6,9 +6,45 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    connect(ui->horizontalSliderAmp,
+            SIGNAL(valueChanged(int)),
+            ui->widget,
+            SLOT(setAmplitude(int)));
+
+    connect(ui->horizontalSliderFreq,
+            SIGNAL(valueChanged(int)),
+            ui->widget,
+            SLOT(setFrequencia(int)));
+
+    connect(ui->horizontalSliderVel,
+            SIGNAL(valueChanged(int)),
+            ui->widget,
+            SLOT(setVelocidade(int)));
+
+    ui->lcdNumberAmp->display(ui->horizontalSliderAmp->value());
+    ui->lcdNumberFreq->display(ui->horizontalSliderFreq->value());
+    ui->lcdNumberVel->display(ui->horizontalSliderVel->value());
+
+
+    connect(ui->widget,
+            SIGNAL(mudaX(int)),
+            ui->lcdNumberX,
+            SLOT(display(int)));
+
+    connect(ui->widget,
+            SIGNAL(mudaY(int)),
+            ui->lcdNumberY,
+            SLOT(display(int)));
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+
+
+
+
+
+
