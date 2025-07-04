@@ -11,6 +11,7 @@ private:
     float amp;
     float freq;
     float vel;
+    int r, g, b;
 public:
     explicit Plotter(QWidget *parent = nullptr);
 
@@ -22,6 +23,8 @@ public slots:
     void setAmplitude(int amp);
     void setFrequencia(int freq);
     void setVelocidade(int vel);
+    void mudaCor(int r, int g, int b);
+
 signals:
     void mudaX(int);
     void mudaY(int);

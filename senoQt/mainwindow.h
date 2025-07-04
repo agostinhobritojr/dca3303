@@ -17,6 +17,11 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+public slots:
+    void finaliza();
+    void mudaCor();
+    void sobre();
+
 private:
     Ui::MainWindow *ui;
 };

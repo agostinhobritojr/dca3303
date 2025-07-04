@@ -15,6 +15,9 @@ Plotter::Plotter(QWidget *parent)
     freq = 1;
     vel = 0;
     setMouseTracking(true);
+    r = 255;
+    g = 255;
+    b = 200;
 }
 
 void Plotter::paintEvent(QPaintEvent *event){
@@ -24,7 +27,7 @@ void Plotter::paintEvent(QPaintEvent *event){
 
     painter.setRenderHint(QPainter::Antialiasing);
 
-    brush.setColor(QColor(255,255,200));
+    brush.setColor(QColor(r,g,b));
     brush.setStyle(Qt::SolidPattern);
 
     pen.setColor(QColor(255,0,0));
@@ -88,6 +91,14 @@ void Plotter::setFrequencia(int freq)
 void Plotter::setVelocidade(int vel)
 {
     this->vel = vel/100.0;
+    repaint();
+}
+
+void Plotter::mudaCor(int r, int g, int b)
+{
+    this->r = r;
+    this->g = g;
+    this->b = b;
     repaint();
 }
 

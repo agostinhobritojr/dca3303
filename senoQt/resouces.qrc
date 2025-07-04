@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file alias="caveira">resources/caveira.svg</file>
+    </qresource>
+</RCC>

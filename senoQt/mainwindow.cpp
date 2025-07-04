@@ -1,5 +1,10 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QMessageBox>
+#include <QString>
+#include <QColorDialog>
+
+#include "dialogcor.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -35,11 +40,66 @@ MainWindow::MainWindow(QWidget *parent)
             SIGNAL(mudaY(int)),
             ui->lcdNumberY,
             SLOT(display(int)));
+
+    connect(ui->actionSair,
+            SIGNAL(triggered()),
+            this,
+            SLOT(finaliza()));
+
+    connect(ui->actionSobre,
+            SIGNAL(triggered()),
+            this,
+            SLOT(sobre()));
+
+    connect(ui->actionMudaCor,
+            SIGNAL(triggered()),
+            this,
+            SLOT(mudaCor()));
+
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::finaliza()
+{
+    close();
+}
+
+void MainWindow::mudaCor()
+{
+    DialogCor dialog;
+    QMessageBox box;
+    QColorDialog colorDialog;
+
+    if(colorDialog.exec() == QDialog::Accepted){
+        ui->widget->mudaCor(colorDialog.selectedColor().red(),
+                            colorDialog.selectedColor().green(),
+                            colorDialog.selectedColor().blue());
+    }
+
+/*    if(dialog.exec() == QDialog::Accepted){
+        QString s;
+        s = QString("R: ") + QString::number(dialog.getR())+
+            QString("<br>") +
+            QString("G: ") + QString::number(dialog.getG())+
+            QString("<br>") +
+            QString("B: ") + QString::number(dialog.getB());
+        box.setText(s);
+        box.exec();
+        ui->widget->mudaCor(dialog.getR(),dialog.getG(),
+                                           dialog.getB());
+    }
+*/
+}
+
+void MainWindow::sobre()
+{
+    QMessageBox box;
+    box.setText("Seno Qt. Mostra um seno animado!");
+    box.exec();
 }
 
 
