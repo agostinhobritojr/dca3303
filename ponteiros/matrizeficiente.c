@@ -10,6 +10,12 @@ int main(void) {
   x[0] = (int *)malloc(nl * nc * sizeof(int *));
   x[1] = x[0] + nc;
 
+  w = (int **)malloc(nl * sizeof(int *));
+  w[0] = (int *)malloc(nl * nc * sizeof(int *));
+  for (int i = 1; i < nl; i++) {
+    w[i] = w[i - 1] + nc;
+  }
+
   for (int i = 0; i < 2; i++) {
     for (int j = 0; j < 3; j++) {
       y[i][j] = i * nc + j + 1;
@@ -39,11 +45,15 @@ int main(void) {
   }
 
   // COPIAR x > w
+  memcpy(w[0], x[0], nl * nc * sizeof(int));
 
   //  printf("valor = %d\n", x[1][-1]);
 
   free(x[0]);
   free(x);
+
+  free(w[0]);
+  free(w);
 
   //  printf("%p \n%p\n", &y[0][2], &y[1][0]);
 }
