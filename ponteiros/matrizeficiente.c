@@ -4,7 +4,7 @@
 
 int main(void) {
   int y[2][3], z[2][3];
-  int **x;
+  int **x, **w;
   int nl = 2, nc = 3;
   x = (int **)malloc(nl * sizeof(int *));
   x[0] = (int *)malloc(nl * nc * sizeof(int *));
@@ -16,7 +16,7 @@ int main(void) {
     }
   }
 
-  memcpy(z, y, 2 * 3 * sizeof(int));
+  memcpy(x[0], y, 2 * 3 * sizeof(int));
 
   /*
    for (int i = 0; i < 2; i++) {
@@ -28,7 +28,7 @@ int main(void) {
 
   for (int i = 0; i < nl; i++) {
     for (int j = 0; j < nc; j++) {
-      printf("%d ", z[i][j]);
+      printf("%d ", x[i][j]);
     }
     printf("\n");
   }
@@ -37,6 +37,8 @@ int main(void) {
   for (int i = 1; i < nl * nc; i++) {
     x[0][i] = x[0][i - 1] + 1;
   }
+
+  // COPIAR x > w
 
   //  printf("valor = %d\n", x[1][-1]);
 
