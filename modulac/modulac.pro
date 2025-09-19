@@ -1,11 +1,11 @@
 TEMPLATE = app
-CONFIG += console c++17
+CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp \
-        vetor2d.cpp
+        funcoes.c \
+        main.c
 
 HEADERS += \
-    vetor2d.h
+    funcoes.h
