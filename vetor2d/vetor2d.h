@@ -8,8 +8,32 @@ private:
     float x;
     // alo
 public:
+    // construtor padrao (default)
+    Vetor2d(void);
+    // construtor com argumentos
+    Vetor2d(float x_, float y_);
+    // destrutor
+    ~Vetor2d(void);
     void setX(float x_);
     float getX();
+    void setY(float y_);
+    float getY();
+    void print(void);
+    float norma(void);
+    float angulo(void);
+    // sobrecarga de operadores
+    // produto POR escalar
+    Vetor2d produto(float a);
+    // produtor escalar
+    float produto(Vetor2d v1);
+//    Vetor3d produtoVetorial(Vetor2d v1);
 };
 
 #endif // VETOR2D_H
+
+
+
+
+
+
+
