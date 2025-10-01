@@ -1,3 +1,6 @@
+// diretiva de compilacao condicional
+// so compila se o simbolo VETOR2D_H
+// NAO ESTIVER DEFINIDO
 #ifndef VETOR2D_H
 #define VETOR2D_H
 
@@ -12,6 +15,12 @@ public:
     Vetor2d(void);
     // construtor com argumentos
     Vetor2d(float x_, float y_);
+    // construtor de copia
+    // recebe referencia constante
+    // para evitar modificacoes acidentais
+    // no objeto oriundo para ser copiado
+    Vetor2d(const Vetor2d& copia);
+
     // destrutor
     ~Vetor2d(void);
     void setX(float x_);

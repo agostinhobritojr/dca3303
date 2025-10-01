@@ -8,7 +8,14 @@ Vetor2d::Vetor2d(){
 }
 
 Vetor2d::Vetor2d(float x_, float y_){
+    std::cout << "Construtor com argumentos\n";
     x = x_; y = y_;
+}
+
+Vetor2d::Vetor2d(const Vetor2d &copia){
+    std::cout << "Construtor de copia\n";
+    x = copia.x;
+    y = copia.y;
 }
 
 Vetor2d::~Vetor2d(){
