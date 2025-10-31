@@ -32,12 +32,15 @@ public:
 
 int main(){
     Alo a1(3), a2(5), a3;
+    int x;
     a3 = a1 + a2;
  //   a3 = a1.operator+(a2);
 //    a3.print();
     std::cout << "digite x: ";
-    std::cin >> a3;
+    std::cin >> a3 >> x;
     std::cout << "a3 = " << a3 << "\n";
+//    std::cin >> x;
+    std::cout << "x(main) = " << x << "\n";
     return 0;
 }
 
