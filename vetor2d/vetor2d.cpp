@@ -69,12 +69,28 @@ float Vetor2d::produto(Vetor2d v1){
     return x*v1.x + y*v1.y;
 }
 
+Vetor2d Vetor2d::operator*(float a){
+    Vetor2d ret;
+    ret.x = a * x;
+    ret.y = a * y;
+    return ret;
+}
+
+float Vetor2d::operator*(Vetor2d v1){
+    return x*v1.x + y*v1.y;
+}
 
 
+Vetor2d operator *(float a, Vetor2d v1){
+    Vetor2d ret;
+   // ret.setX(a*v1.getX());
+   // ret.setY(a*v1.getY());
 
+    ret.x = a*v1.x;
+    ret.y = a*v1.y;
 
-
-
+    return ret;
+}
 
 
 

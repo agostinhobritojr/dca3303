@@ -35,8 +35,14 @@ public:
     Vetor2d produto(float a);
     // produtor escalar
     float produto(Vetor2d v1);
+    Vetor2d operator*(float a);
+    float operator*(Vetor2d v1);
 //    Vetor3d produtoVetorial(Vetor2d v1);
+    // funcao AMIGA (friendship)
+    friend Vetor2d operator *(float a, Vetor2d v1);
 };
+
+Vetor2d operator *(float a, Vetor2d v1);
 
 #endif // VETOR2D_H
 
