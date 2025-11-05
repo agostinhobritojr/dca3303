@@ -9,7 +9,9 @@ class Equipamento{
 protected:
     float preco;
 public:
-    int teste;
+    Equipamento();
+    Equipamento(float preco);
+    ~Equipamento();
     void setNome(const char *nome_);
     void setFabricante(const char *fabricante_);
     void setPreco(float preco_);

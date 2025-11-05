@@ -1,5 +1,21 @@
 #include "equipamento.h"
 #include <cstring>
+#include <iostream>
+
+Equipamento::Equipamento()
+{
+    std::cout << "Construtor Equipamento padrao\n";
+}
+
+Equipamento::Equipamento(float preco)
+{
+    this->preco = preco;
+}
+
+Equipamento::~Equipamento()
+{
+    std::cout << "Destrutor Equipamento\n";
+}
 
 void Equipamento::setNome(const char *nome_){
     std::strcpy(nome,nome_);
