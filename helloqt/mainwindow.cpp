@@ -35,9 +35,9 @@ void MainWindow::vouMorrer()
 
 void MainWindow::testaSlider(int valor)
 {
-    if(valor > 50){
-        exit(0);
-    }
+    //  if(valor > 50){
+    //    exit(0);
+    //}
 }
 
 
