@@ -8,10 +8,17 @@ class Plotter : public QWidget
     Q_OBJECT
 private:
     float fase;
+    float freq;
+    float vel;
+    float amp;
 public:
     explicit Plotter(QWidget *parent = nullptr);
     void paintEvent(QPaintEvent *event);
     void timerEvent(QTimerEvent *event);
+public slots:
+    void setAmplitude(int amp);
+    void setFrequencia(int freq);
+    void setVelocidade(int vel);
 signals:
 };
 
