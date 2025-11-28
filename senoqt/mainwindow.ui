@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QHBoxLayout" name="horizontalLayout" stretch="80,20">
+   <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="100,0">
     <item>
      <widget class="Plotter" name="widget" native="true"/>
     </item>
@@ -89,7 +89,7 @@
         <item row="2" column="1">
          <widget class="QSlider" name="horizontalSliderVel">
           <property name="minimum">
-           <number>-100</number>
+           <number>0</number>
           </property>
           <property name="maximum">
            <number>100</number>
@@ -124,6 +124,38 @@
         </property>
        </spacer>
       </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="title">
+         <string>X/Y</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLCDNumber" name="lcdNumber_X">
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Plain</enum>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::SegmentStyle::Flat</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLCDNumber" name="lcdNumber_Y">
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Plain</enum>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::SegmentStyle::Flat</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
      </layout>
     </item>
    </layout>
@@ -137,8 +169,42 @@
      <height>23</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionAlo"/>
+   </widget>
+   <addaction name="menuFile"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAlo"/>
+  </widget>
+  <action name="actionAlo">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/alo</normaloff>:/alo</iconset>
+   </property>
+   <property name="text">
+    <string>Alo</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
  </widget>
  <customwidgets>
   <customwidget>
@@ -148,7 +214,9 @@
    <container>1</container>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>horizontalSliderAmp</sender>
@@ -157,12 +225,12 @@
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>720</x>
-     <y>99</y>
+     <x>787</x>
+     <y>52</y>
     </hint>
     <hint type="destinationlabel">
-     <x>790</x>
-     <y>102</y>
+     <x>857</x>
+     <y>56</y>
     </hint>
    </hints>
   </connection>
@@ -173,28 +241,28 @@
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>718</x>
-     <y>174</y>
+     <x>787</x>
+     <y>81</y>
     </hint>
     <hint type="destinationlabel">
-     <x>786</x>
-     <y>178</y>
+     <x>857</x>
+     <y>85</y>
     </hint>
    </hints>
   </connection>
   <connection>
    <sender>horizontalSliderVel</sender>
-   <signal>actionTriggered(int)</signal>
+   <signal>valueChanged(int)</signal>
    <receiver>lcdNumber_3</receiver>
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>678</x>
-     <y>243</y>
+     <x>787</x>
+     <y>110</y>
     </hint>
     <hint type="destinationlabel">
-     <x>790</x>
-     <y>238</y>
+     <x>857</x>
+     <y>114</y>
     </hint>
    </hints>
   </connection>

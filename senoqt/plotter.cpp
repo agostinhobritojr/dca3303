@@ -3,6 +3,8 @@
 #include <QPen>
 #include <QBrush>
 #include <QColor>
+#include <QDebug>
+#include <QMouseEvent>
 
 Plotter::Plotter(QWidget *parent)
     : QWidget{parent}
@@ -14,6 +16,7 @@ Plotter::Plotter(QWidget *parent)
     // cria um temporizador que a cada 200ms
     // eh ativado
     startTimer(50);
+    setMouseTracking(true);
 }
 
 void Plotter::paintEvent(QPaintEvent *event)
@@ -62,6 +65,21 @@ void Plotter::timerEvent(QTimerEvent *event)
     fase = fase+vel;
     // manda repintar o componente
     repaint();
+}
+
+void Plotter::mousePressEvent(QMouseEvent *event)
+{
+    qDebug() << event->position().x() <<
+        event->position().y();
+    // emite o sinal com um inteiro
+    emit mudaX(event->position().x());
+    emit mudaY(event->position().y());
+}
+
+void Plotter::mouseMoveEvent(QMouseEvent *event)
+{
+    emit mudaX(event->position().x());
+    emit mudaY(event->position().y());
 }
 
 void Plotter::setAmplitude(int amp)

@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="alo">resources/alo.svg</file>
+    </qresource>
+</RCC>
