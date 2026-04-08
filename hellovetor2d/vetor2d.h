@@ -8,7 +8,9 @@ private:
 public:
     void setX(float x_);
     float getX();
+    float norma();
+    void setY(float y_);
+    float getY();
 };
-
 
 #endif // VETOR2D_H

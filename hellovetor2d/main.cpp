@@ -7,6 +7,7 @@
 int main(void) {
     Vetor2d v;
     v.setX(3);
-    std::cout << v.getX() << "\n";
+    v.setY(4);
+    std::cout << v.norma() << "\n";
 }
 
