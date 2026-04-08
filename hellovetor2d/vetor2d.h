@@ -11,6 +11,9 @@ public:
     float norma();
     void setY(float y_);
     float getY();
+    void print();
+    float angulo();
+    Vetor2d unitario();
 };
 
 #endif // VETOR2D_H
