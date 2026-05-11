@@ -73,17 +73,43 @@ Vetor2d Vetor2d::operator + (Vetor2d v){
     return ret;
 }
 
-Vetor2d Vetor2d::produto(float a)
-{
+Vetor2d Vetor2d::produto(float a){
+    Vetor2d retorno;
+    retorno.x = a*x;
+    retorno.y = a*y;
+    return retorno;
+}
+Vetor2d Vetor2d::operator *(float a){
     Vetor2d retorno;
     retorno.x = a*x;
     retorno.y = a*y;
     return retorno;
 }
 
+Vetor2d operator*(float a, Vetor2d v){
+    Vetor2d retorno;
+    retorno.x = a * v.x;
+    retorno.y = a * v.y;
+    return retorno;
+}
+
 float Vetor2d::norma(){
     return std::sqrt(x*x + y*y);
 }
+
+std::ostream& operator<<(std::ostream &os, const Vetor2d &v){
+    os << "(" << v.x << "," << v.y << ")";
+    return os;
+}
+
+std::istream& operator>>(std::istream &is, Vetor2d &v){
+    is >> v.x >> v.y;
+    return is;
+}
+
+
+
+
 
 
 

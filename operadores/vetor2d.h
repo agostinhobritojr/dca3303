@@ -1,6 +1,8 @@
 #ifndef VETOR2D_H
 #define VETOR2D_H
 
+#include <iostream>
+
 class Vetor3d;
 
 class Vetor2d {
@@ -29,11 +31,26 @@ public:
     Vetor2d unitario();
     Vetor2d soma(Vetor2d v);
     Vetor2d operator + (Vetor2d v);
+    Vetor2d operator * (float a);
     Vetor2d produto(float a=2);
     float produto(Vetor2d v);
+    // funcao amiga eh uma funcaao que pode acessar os
+    // campos privados da classe
+    friend Vetor2d operator* (float a, Vetor2d v);
+    friend std::ostream& operator<<(std::ostream &os, const Vetor2d &v);
+    friend std::istream& operator>>(std::istream &is, Vetor2d &v);
 };
 
+//Vetor2d operator* (float a, Vetor2d v);
+
 #endif // VETOR2D_H
+
+
+
+
+
+
+
 
 
 
