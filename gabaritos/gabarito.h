@@ -1,6 +1,11 @@
 #ifndef GABARITO_H
 #define GABARITO_H
 
+// #include <iomanip>
+
+// f << std::fixed;
+// f << std::setprecision(2);
+
 template <typename T>
 T media(T a, T b) {
   return (a + b) / 2;
