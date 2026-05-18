@@ -2,7 +2,7 @@
 #include "motor.h"
 
 int main(void){
-    Motor m;
+    Motor m(200);
     std::cout << "mem = " << sizeof(m) << "\n";
     m.setFabricante("ACME");
     m.setPreco(23.45);

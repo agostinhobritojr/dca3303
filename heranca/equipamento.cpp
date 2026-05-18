@@ -1,5 +1,17 @@
 #include "equipamento.h"
 #include <cstring>
+#include <iostream>
+
+Equipamento::Equipamento(int preco){
+    this->preco = preco;
+    std::cout << "Construtor default Equipamento\n";
+}
+
+Equipamento::~Equipamento()
+{
+    std::cout << "Destrutor Equipamento\n";
+
+}
 
 void Equipamento::setNome(const char *nome_){
     strcpy(nome,nome_);

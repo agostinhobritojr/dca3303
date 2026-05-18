@@ -1,4 +1,21 @@
 #include "motor.h"
+#include <iostream>
+
+// escolhe o construtor e passa o valor desejado
+Motor::Motor(float potencia) : Equipamento(20*potencia){
+    this->potencia = potencia;
+    std::cout << "Construtor default Motor\n";
+}
+
+Motor::~Motor()
+{
+    std::cout << "Destrutor Motor\n";
+}
+
+void Motor::setPreco(float preco_){
+    preco = preco_;
+    potencia = preco/20;
+}
 
 void Motor::setPotencia(float _potencia){
     potencia=_potencia;
