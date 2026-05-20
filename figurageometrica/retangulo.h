@@ -7,6 +7,7 @@ class Retangulo : public FiguraGeometrica{
     int largura, altura;
 public:
     Retangulo();
+    ~Retangulo();
     void draw();
     int getLargura();
     int getAltura();
