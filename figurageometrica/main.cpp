@@ -5,6 +5,8 @@
 #include "retangulo.h"
 #include <vector>
 #include <algorithm>
+#include <fstream>
+#include <string>
 
 int main(){
     // classe abstrata nao pode ter objetos
@@ -12,17 +14,51 @@ int main(){
     FiguraGeometrica *pfig;
     std::vector<FiguraGeometrica*> figuras;
 
-    figuras.push_back(new Reta(10,10,15,20,38));
-    figuras.push_back(new Retangulo);
-    figuras.push_back(new Retangulo);
-    figuras.push_back(new Circulo);
+    std::ifstream fin;
+    fin.open("/home/ambj/workspace/dca3303/"
+             "figurageometrica/figura.txt");
+    if(!fin.is_open()){
+        std::cout << "nao abriu figuras.txt \n";
+        exit(0);
+    }
 
-    std::random_shuffle(figuras.begin(), figuras.end());
+    std::string s;
+    int cor;
+
+    while(fin.good()){
+        fin >> s;
+        // verifica se a leitura foi correta
+        if(fin.good()){
+            if(s.compare("reta") == 0){
+                int x0, y0, x1, y1;
+                fin >> x0 >> y0 >> x1 >> y1 >> cor;
+                figuras.push_back(
+                    new Reta(x0, y0, x1, y1, cor));
+            }
+            if(s.compare("retangulo") == 0){
+                int x0, y0, largura, altura;
+                fin >> x0 >> y0 >> largura >> altura >> cor;
+                figuras.push_back(
+                    new Retangulo(x0, y0, largura,
+                                  altura, cor));
+            }
+            if(s.compare("circulo") == 0){
+                int x0, y0, raio;
+                fin >> x0 >> y0 >> raio >> cor;
+                figuras.push_back(
+                    new Circulo(x0, y0, raio, cor));
+            }
+
+        }
+    }
+
+//    std::random_shuffle(figuras.begin(), figuras.end());
 
     for(auto fig : figuras){
         fig->draw();
     }
 
+    // s.writeOFF("saida.off");
 
     for(int i=0; i<figuras.size(); i++){
         delete figuras[i];

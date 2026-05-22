@@ -2,7 +2,7 @@
 #include <iostream>
 
 Reta::Reta(int x0, int y0, int x1, int y1, int cor) {
-    std::cout << "Construtor Reta\n";
+ //   std::cout << "Construtor Reta\n";
     this->x0 = x0;
     this->y0 = y0;
     this->x1 = x1;
@@ -12,7 +12,7 @@ Reta::Reta(int x0, int y0, int x1, int y1, int cor) {
 
 Reta::~Reta()
 {
-    std::cout << "Destrutor Reta\n";
+  //  std::cout << "Destrutor Reta\n";
 }
 
 void Reta::draw()

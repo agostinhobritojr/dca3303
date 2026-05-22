@@ -15,3 +15,6 @@ HEADERS += \
     figurageometrica.h \
     reta.h \
     retangulo.h
+
+DISTFILES += \
+    figura.txt
