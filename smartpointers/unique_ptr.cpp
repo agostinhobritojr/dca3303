@@ -1,5 +1,5 @@
 #include <iostream>
-#include <memory>
+#include <memory> // c++ smart pointers
 
 class Foo {
   float x, y;
