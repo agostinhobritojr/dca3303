@@ -18,7 +18,15 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+public slots:
+    void copyText(void);
+
 private:
     Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H
+
+
+
+
+
