@@ -13,6 +13,9 @@ Plotter::Plotter(QWidget *parent)
     freq = 1;
     fase = 0;
     vel = 0;
+    backR = 255;
+    backG = 255;
+    backB = 200;
     startTimer(10);
     setMouseTracking(true);
 }
@@ -25,7 +28,7 @@ void Plotter::paintEvent(QPaintEvent *event)
 
     p.setRenderHint(QPainter::Antialiasing);
 
-    brush.setColor(QColor(255,255,200,255)); // amarelo
+    brush.setColor(QColor(backR, backG, backB,255)); // amarelo
     brush.setStyle(Qt::SolidPattern);
 
     p.setBrush(brush);
@@ -79,6 +82,14 @@ void Plotter::mouseMoveEvent(QMouseEvent *event)
 {
     emit mudaX(event->pos().x());
     emit mudaY(event->pos().y());
+}
+
+void Plotter::setBackgroundColor(int r, int g, int b)
+{
+    backR = r;
+    backG = g;
+    backB = b;
+    repaint();
 }
 
 

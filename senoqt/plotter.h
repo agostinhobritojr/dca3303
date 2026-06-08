@@ -11,6 +11,8 @@ private:
     float freq;
     float fase;
     float vel;
+    int backR, backG, backB;
+
 public:
     explicit Plotter(QWidget *parent = nullptr);
 
@@ -18,6 +20,8 @@ public:
     void timerEvent(QTimerEvent *event);
     void mousePressEvent(QMouseEvent *event);
     void mouseMoveEvent(QMouseEvent *event);
+
+    void setBackgroundColor(int r, int g, int b);
 
 signals:
     void mudaX(int);
