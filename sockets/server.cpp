@@ -38,12 +38,16 @@ void handleClient(boost::asio::ip::tcp::socket&& socket) {
 int main() {
   try {
     // cria o contexto de I/O
+    // o io_context eh a classe central do boost::asio, que gerencia as
+    // operacoes de I/O assíncronas. Ele é responsável por fornecer um loop de
+    // eventos que processa as operações de I/O e as tarefas associadas a elas.
+    // O io_context é usado para criar sockets, timers e outras entidades de
+    // I/O, e para executar as operações de I/O de forma assíncrona.
     boost::asio::io_context ioContext;
 
     // cria o acceptor de conexoes
     // para ip v4, porta 1234
-    boost::asio::ip::tcp::endpoint 
-    endpoint(boost::asio::ip::tcp::v4(), 1234);
+    boost::asio::ip::tcp::endpoint endpoint(boost::asio::ip::tcp::v4(), 1234);
 
     // apenas para localhost
     // boost::asio::ip::tcp::endpoint

@@ -69,7 +69,7 @@ int main() {
     numThreads = numCores;
   }
   //  numThreads = 4;
-  for (long int i = 1; i <= 10000000; i++) {
+  for (long int i = 1; i <= 100000000; i++) {
     vetorEnorme.push_back(i);
   }
 
