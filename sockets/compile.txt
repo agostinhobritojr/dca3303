@@ -1,1 +1,0 @@
-g++ -o ssl_server_multithreaded ssl_server_multithreaded.cpp -lboost_system -lssl -lcrypto -lboost_thread
