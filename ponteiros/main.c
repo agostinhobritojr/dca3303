@@ -1,7 +1,9 @@
 #include <stdio.h>
 
+int z;
+
 void troca(int a, int b){
-  int tmp;
+  static int tmp;
   printf("a = %d; b = %d\n", a, b);
   tmp=a; a=b; b=tmp;
   printf("a = %d; b = %d\n", a, b);
