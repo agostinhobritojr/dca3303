@@ -19,6 +19,7 @@ int* myrealloc(int* old, int oldsize, int newsize) {
 
 int main() {
   int *x, n = 10, oldn;
+  printf("main = %p\n", main);
   x = (int*)malloc(n * sizeof(int));
   for (int i = 0; i < n; i++) {
     x[i] = i;
