@@ -12,9 +12,20 @@ Vetor2d::Vetor2d(float _x, float _y){
   x = _x; y = _y;
 }
 
+Vetor2d::Vetor2d(const Vetor2d &copia){
+  std::cout << "Construtor de copia\n";
+  x = copia.x;
+  y = copia.y;
+}
+
+Vetor2d::~Vetor2d(){
+  std::cout << "Destrutor\n";
+}
+
 void Vetor2d::setX(float x_){
   x = x_;
 }
+
 void Vetor2d::setY(float y_){
   y = y_;
 }
@@ -52,4 +63,8 @@ Vetor2d Vetor2d::produto(float a){
 
 float Vetor2d::produto(Vetor2d v1){
   return x*v1.x + y*v1.y;
+}
+
+float f(float x, float a, float b){
+  return x*a+b;
 }

@@ -1,11 +1,10 @@
 #include <iostream>
 #include <cmath>
 #include "vetor2d.h"
-#include "vetor2d.h"
 
 int main(void){
   // v1 eh um objeto da classe Vetor2d
-  Vetor2d v1(3.0, 4.0), v2, v3, v4;
+  Vetor2d v1(3.0), v2, v3, v4;
   v1.print();
   std::cout << "\n";
 
@@ -21,12 +20,12 @@ int main(void){
 
   std::cout << "v3 = ";
   v3.print();
+  std::cout << "\n";
 
   v3 = v1.produto(3);
   v3.print();
   std::cout << std::endl;
 
-  float a;
   std::cout << v1.produto(v2);
 
   std::cout << "\n" << std::flush;
