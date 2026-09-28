@@ -7,9 +7,9 @@ Vetor2d::Vetor2d(){
   x = 0; y = 0;
 }
 
-Vetor2d::Vetor2d(float _x, float _y){
+Vetor2d::Vetor2d(float x, float y){
   std::cout << "Construtor com argumentos Vetor2d\n";
-  x = _x; y = _y;
+  this->x = x; this->y = y;
 }
 
 Vetor2d::Vetor2d(const Vetor2d &copia){
@@ -20,6 +20,10 @@ Vetor2d::Vetor2d(const Vetor2d &copia){
 
 Vetor2d::~Vetor2d(){
   std::cout << "Destrutor\n";
+}
+
+void Vetor2d::printAddr(){
+  std::cout << this << std::endl;
 }
 
 void Vetor2d::setX(float x_){

@@ -21,6 +21,8 @@ class Vetor2d{
   // destrutor da classe
   ~Vetor2d();
 
+  void printAddr();
+
   void setX(float x_);
   void setY(float y_);
   float getX();

@@ -4,7 +4,17 @@
 
 int main(void){
   // v1 eh um objeto da classe Vetor2d
-  Vetor2d v1(3.0), v2, v3, v4;
+  Vetor2d v1(3.0), v2, v3, *v4;
+
+  v4 = &v1;
+
+  std::cout << "end v1: " << &v1 << std::endl;
+  v1.printAddr();
+  std::cout << std::endl;
+
+  v4->print();
+
+ /*
   v1.print();
   std::cout << "\n";
 
@@ -29,6 +39,7 @@ int main(void){
   std::cout << v1.produto(v2);
 
   std::cout << "\n" << std::flush;
+*/
 }
 
 
