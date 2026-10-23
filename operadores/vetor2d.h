@@ -26,12 +26,20 @@ class Vetor2d{
   void setX(float x_);
   void setY(float y_);
   float getX();
+  float getY();
   void print(void);
   float norma(void);
   float angulo(void);
   Vetor2d soma(Vetor2d v);
 
   Vetor2d operator + (Vetor2d v);
+  Vetor2d operator * (float a);
+
+  // funcao amiga da classe pode ter acesso
+  // aas suas propriedades privadas
+  // NAAO EH UM MEHTODO DA CLASSE!!!
+
+  friend Vetor2d operator*(float a, Vetor2d v);
 
   // sobrecarga de metodos
   // method overloading
@@ -40,6 +48,8 @@ class Vetor2d{
   float produto(Vetor2d v1);
 //  Vetor3d produto(Vetor2d v1);
 };
+
+//Vetor2d operator*(float a, Vetor2d v);
 
 float f(float x, float a=1, float b=1);
 

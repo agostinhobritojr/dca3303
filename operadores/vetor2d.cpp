@@ -38,6 +38,10 @@ float Vetor2d::getX(){
   return x;
 }
 
+float Vetor2d::getY(){
+  return y;
+}
+
 void Vetor2d::print(void){
   std::cout << "(" << x << "," << y << ")";
 }
@@ -65,6 +69,13 @@ Vetor2d Vetor2d::operator +(Vetor2d v){
   return ret;
 }
 
+Vetor2d Vetor2d::operator *(float a){
+  Vetor2d ret;
+  ret.x = a * x;
+  ret.y = a * y;
+  return ret;
+}
+
 Vetor2d Vetor2d::produto(float a){
   Vetor2d ret;
   ret.x = a * x;
@@ -79,3 +90,16 @@ float Vetor2d::produto(Vetor2d v1){
 float f(float x, float a, float b){
   return x*a+b;
 }
+
+Vetor2d operator*(float a, Vetor2d v){
+  Vetor2d ret;
+//  ret.setX(a * v.getX());
+//  ret.setY(a * v.getY());
+
+  ret.x = a * v.x;
+  ret.y = a * v.y;
+  return ret;
+}
+
+
+
