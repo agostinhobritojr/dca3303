@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -Wl,--dependency-file=CMakeFiles/heranca.dir/link.d CMakeFiles/heranca.dir/equipamento.cpp.o CMakeFiles/heranca.dir/main.cpp.o CMakeFiles/heranca.dir/motor.cpp.o -o heranca

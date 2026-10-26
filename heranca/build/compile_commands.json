@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/ambj/workspace/dca3303/heranca/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/heranca.dir/equipamento.cpp.o -c /home/ambj/workspace/dca3303/heranca/equipamento.cpp",
+  "file": "/home/ambj/workspace/dca3303/heranca/equipamento.cpp",
+  "output": "CMakeFiles/heranca.dir/equipamento.cpp.o"
+},
+{
+  "directory": "/home/ambj/workspace/dca3303/heranca/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/heranca.dir/main.cpp.o -c /home/ambj/workspace/dca3303/heranca/main.cpp",
+  "file": "/home/ambj/workspace/dca3303/heranca/main.cpp",
+  "output": "CMakeFiles/heranca.dir/main.cpp.o"
+},
+{
+  "directory": "/home/ambj/workspace/dca3303/heranca/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/heranca.dir/motor.cpp.o -c /home/ambj/workspace/dca3303/heranca/motor.cpp",
+  "file": "/home/ambj/workspace/dca3303/heranca/motor.cpp",
+  "output": "CMakeFiles/heranca.dir/motor.cpp.o"
+}
+]
