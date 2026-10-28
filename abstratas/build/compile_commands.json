@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/ambj/workspace/dca3303/abstratas/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/abstratas.dir/figurageometrica.cpp.o -c /home/ambj/workspace/dca3303/abstratas/figurageometrica.cpp",
+  "file": "/home/ambj/workspace/dca3303/abstratas/figurageometrica.cpp",
+  "output": "CMakeFiles/abstratas.dir/figurageometrica.cpp.o"
+},
+{
+  "directory": "/home/ambj/workspace/dca3303/abstratas/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/abstratas.dir/main.cpp.o -c /home/ambj/workspace/dca3303/abstratas/main.cpp",
+  "file": "/home/ambj/workspace/dca3303/abstratas/main.cpp",
+  "output": "CMakeFiles/abstratas.dir/main.cpp.o"
+}
+]
