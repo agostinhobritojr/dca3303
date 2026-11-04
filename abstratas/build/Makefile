@@ -129,6 +129,30 @@ abstratas/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/abstratas.dir/build.make CMakeFiles/abstratas.dir/build
 .PHONY : abstratas/fast
 
+circulo.o: circulo.cpp.o
+.PHONY : circulo.o
+
+# target to build an object file
+circulo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/abstratas.dir/build.make CMakeFiles/abstratas.dir/circulo.cpp.o
+.PHONY : circulo.cpp.o
+
+circulo.i: circulo.cpp.i
+.PHONY : circulo.i
+
+# target to preprocess a source file
+circulo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/abstratas.dir/build.make CMakeFiles/abstratas.dir/circulo.cpp.i
+.PHONY : circulo.cpp.i
+
+circulo.s: circulo.cpp.s
+.PHONY : circulo.s
+
+# target to generate assembly for a file
+circulo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/abstratas.dir/build.make CMakeFiles/abstratas.dir/circulo.cpp.s
+.PHONY : circulo.cpp.s
+
 figurageometrica.o: figurageometrica.cpp.o
 .PHONY : figurageometrica.o
 
@@ -177,6 +201,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/abstratas.dir/build.make CMakeFiles/abstratas.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+reta.o: reta.cpp.o
+.PHONY : reta.o
+
+# target to build an object file
+reta.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/abstratas.dir/build.make CMakeFiles/abstratas.dir/reta.cpp.o
+.PHONY : reta.cpp.o
+
+reta.i: reta.cpp.i
+.PHONY : reta.i
+
+# target to preprocess a source file
+reta.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/abstratas.dir/build.make CMakeFiles/abstratas.dir/reta.cpp.i
+.PHONY : reta.cpp.i
+
+reta.s: reta.cpp.s
+.PHONY : reta.s
+
+# target to generate assembly for a file
+reta.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/abstratas.dir/build.make CMakeFiles/abstratas.dir/reta.cpp.s
+.PHONY : reta.cpp.s
+
+retangulo.o: retangulo.cpp.o
+.PHONY : retangulo.o
+
+# target to build an object file
+retangulo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/abstratas.dir/build.make CMakeFiles/abstratas.dir/retangulo.cpp.o
+.PHONY : retangulo.cpp.o
+
+retangulo.i: retangulo.cpp.i
+.PHONY : retangulo.i
+
+# target to preprocess a source file
+retangulo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/abstratas.dir/build.make CMakeFiles/abstratas.dir/retangulo.cpp.i
+.PHONY : retangulo.cpp.i
+
+retangulo.s: retangulo.cpp.s
+.PHONY : retangulo.s
+
+# target to generate assembly for a file
+retangulo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/abstratas.dir/build.make CMakeFiles/abstratas.dir/retangulo.cpp.s
+.PHONY : retangulo.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +258,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... abstratas"
+	@echo "... circulo.o"
+	@echo "... circulo.i"
+	@echo "... circulo.s"
 	@echo "... figurageometrica.o"
 	@echo "... figurageometrica.i"
 	@echo "... figurageometrica.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... reta.o"
+	@echo "... reta.i"
+	@echo "... reta.s"
+	@echo "... retangulo.o"
+	@echo "... retangulo.i"
+	@echo "... retangulo.s"
 .PHONY : help
 
 

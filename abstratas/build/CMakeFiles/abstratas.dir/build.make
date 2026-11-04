@@ -72,10 +72,24 @@ include CMakeFiles/abstratas.dir/flags.make
 CMakeFiles/abstratas.dir/codegen:
 .PHONY : CMakeFiles/abstratas.dir/codegen
 
+CMakeFiles/abstratas.dir/circulo.cpp.o: CMakeFiles/abstratas.dir/flags.make
+CMakeFiles/abstratas.dir/circulo.cpp.o: /home/ambj/workspace/dca3303/abstratas/circulo.cpp
+CMakeFiles/abstratas.dir/circulo.cpp.o: CMakeFiles/abstratas.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ambj/workspace/dca3303/abstratas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/abstratas.dir/circulo.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/abstratas.dir/circulo.cpp.o -MF CMakeFiles/abstratas.dir/circulo.cpp.o.d -o CMakeFiles/abstratas.dir/circulo.cpp.o -c /home/ambj/workspace/dca3303/abstratas/circulo.cpp
+
+CMakeFiles/abstratas.dir/circulo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/abstratas.dir/circulo.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ambj/workspace/dca3303/abstratas/circulo.cpp > CMakeFiles/abstratas.dir/circulo.cpp.i
+
+CMakeFiles/abstratas.dir/circulo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/abstratas.dir/circulo.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ambj/workspace/dca3303/abstratas/circulo.cpp -o CMakeFiles/abstratas.dir/circulo.cpp.s
+
 CMakeFiles/abstratas.dir/figurageometrica.cpp.o: CMakeFiles/abstratas.dir/flags.make
 CMakeFiles/abstratas.dir/figurageometrica.cpp.o: /home/ambj/workspace/dca3303/abstratas/figurageometrica.cpp
 CMakeFiles/abstratas.dir/figurageometrica.cpp.o: CMakeFiles/abstratas.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ambj/workspace/dca3303/abstratas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/abstratas.dir/figurageometrica.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ambj/workspace/dca3303/abstratas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/abstratas.dir/figurageometrica.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/abstratas.dir/figurageometrica.cpp.o -MF CMakeFiles/abstratas.dir/figurageometrica.cpp.o.d -o CMakeFiles/abstratas.dir/figurageometrica.cpp.o -c /home/ambj/workspace/dca3303/abstratas/figurageometrica.cpp
 
 CMakeFiles/abstratas.dir/figurageometrica.cpp.i: cmake_force
@@ -89,7 +103,7 @@ CMakeFiles/abstratas.dir/figurageometrica.cpp.s: cmake_force
 CMakeFiles/abstratas.dir/main.cpp.o: CMakeFiles/abstratas.dir/flags.make
 CMakeFiles/abstratas.dir/main.cpp.o: /home/ambj/workspace/dca3303/abstratas/main.cpp
 CMakeFiles/abstratas.dir/main.cpp.o: CMakeFiles/abstratas.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ambj/workspace/dca3303/abstratas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/abstratas.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ambj/workspace/dca3303/abstratas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/abstratas.dir/main.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/abstratas.dir/main.cpp.o -MF CMakeFiles/abstratas.dir/main.cpp.o.d -o CMakeFiles/abstratas.dir/main.cpp.o -c /home/ambj/workspace/dca3303/abstratas/main.cpp
 
 CMakeFiles/abstratas.dir/main.cpp.i: cmake_force
@@ -100,20 +114,54 @@ CMakeFiles/abstratas.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/abstratas.dir/main.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ambj/workspace/dca3303/abstratas/main.cpp -o CMakeFiles/abstratas.dir/main.cpp.s
 
+CMakeFiles/abstratas.dir/reta.cpp.o: CMakeFiles/abstratas.dir/flags.make
+CMakeFiles/abstratas.dir/reta.cpp.o: /home/ambj/workspace/dca3303/abstratas/reta.cpp
+CMakeFiles/abstratas.dir/reta.cpp.o: CMakeFiles/abstratas.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ambj/workspace/dca3303/abstratas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/abstratas.dir/reta.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/abstratas.dir/reta.cpp.o -MF CMakeFiles/abstratas.dir/reta.cpp.o.d -o CMakeFiles/abstratas.dir/reta.cpp.o -c /home/ambj/workspace/dca3303/abstratas/reta.cpp
+
+CMakeFiles/abstratas.dir/reta.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/abstratas.dir/reta.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ambj/workspace/dca3303/abstratas/reta.cpp > CMakeFiles/abstratas.dir/reta.cpp.i
+
+CMakeFiles/abstratas.dir/reta.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/abstratas.dir/reta.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ambj/workspace/dca3303/abstratas/reta.cpp -o CMakeFiles/abstratas.dir/reta.cpp.s
+
+CMakeFiles/abstratas.dir/retangulo.cpp.o: CMakeFiles/abstratas.dir/flags.make
+CMakeFiles/abstratas.dir/retangulo.cpp.o: /home/ambj/workspace/dca3303/abstratas/retangulo.cpp
+CMakeFiles/abstratas.dir/retangulo.cpp.o: CMakeFiles/abstratas.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ambj/workspace/dca3303/abstratas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/abstratas.dir/retangulo.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/abstratas.dir/retangulo.cpp.o -MF CMakeFiles/abstratas.dir/retangulo.cpp.o.d -o CMakeFiles/abstratas.dir/retangulo.cpp.o -c /home/ambj/workspace/dca3303/abstratas/retangulo.cpp
+
+CMakeFiles/abstratas.dir/retangulo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/abstratas.dir/retangulo.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ambj/workspace/dca3303/abstratas/retangulo.cpp > CMakeFiles/abstratas.dir/retangulo.cpp.i
+
+CMakeFiles/abstratas.dir/retangulo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/abstratas.dir/retangulo.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ambj/workspace/dca3303/abstratas/retangulo.cpp -o CMakeFiles/abstratas.dir/retangulo.cpp.s
+
 # Object files for target abstratas
 abstratas_OBJECTS = \
+"CMakeFiles/abstratas.dir/circulo.cpp.o" \
 "CMakeFiles/abstratas.dir/figurageometrica.cpp.o" \
-"CMakeFiles/abstratas.dir/main.cpp.o"
+"CMakeFiles/abstratas.dir/main.cpp.o" \
+"CMakeFiles/abstratas.dir/reta.cpp.o" \
+"CMakeFiles/abstratas.dir/retangulo.cpp.o"
 
 # External object files for target abstratas
 abstratas_EXTERNAL_OBJECTS =
 
+abstratas: CMakeFiles/abstratas.dir/circulo.cpp.o
 abstratas: CMakeFiles/abstratas.dir/figurageometrica.cpp.o
 abstratas: CMakeFiles/abstratas.dir/main.cpp.o
+abstratas: CMakeFiles/abstratas.dir/reta.cpp.o
+abstratas: CMakeFiles/abstratas.dir/retangulo.cpp.o
 abstratas: CMakeFiles/abstratas.dir/build.make
 abstratas: CMakeFiles/abstratas.dir/compiler_depend.ts
 abstratas: CMakeFiles/abstratas.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ambj/workspace/dca3303/abstratas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable abstratas"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ambj/workspace/dca3303/abstratas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable abstratas"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/abstratas.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

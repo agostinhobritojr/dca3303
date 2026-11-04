@@ -12,7 +12,12 @@ class FiguraGeometrica {
   void setCor(int cor_);
   int getCor();
   // metodo virtual
-  virtual void draw();
+  //
+  // uma classe ABSTRATA eh aquela que possui PELO MENOS
+  // uma funcao(ou metodo) virtual puro
+  //
+  // metodo virtual PUR0
+  virtual void draw() = 0;
 };
 
 #endif

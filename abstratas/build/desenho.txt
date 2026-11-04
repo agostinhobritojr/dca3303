@@ -1,0 +1,4 @@
+reta 3 4 8 10
+retangulo 4 8 10 15
+circulo 1 2 25
+reta 5 6 10 10

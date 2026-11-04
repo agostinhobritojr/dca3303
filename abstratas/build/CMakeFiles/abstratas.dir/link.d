@@ -2,8 +2,11 @@ abstratas: \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
+  CMakeFiles/abstratas.dir/circulo.cpp.o \
   CMakeFiles/abstratas.dir/figurageometrica.cpp.o \
   CMakeFiles/abstratas.dir/main.cpp.o \
+  CMakeFiles/abstratas.dir/reta.cpp.o \
+  CMakeFiles/abstratas.dir/retangulo.cpp.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
@@ -39,9 +42,15 @@ abstratas: \
 
 /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o:
 
+CMakeFiles/abstratas.dir/circulo.cpp.o:
+
 CMakeFiles/abstratas.dir/figurageometrica.cpp.o:
 
 CMakeFiles/abstratas.dir/main.cpp.o:
+
+CMakeFiles/abstratas.dir/reta.cpp.o:
+
+CMakeFiles/abstratas.dir/retangulo.cpp.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so:
 

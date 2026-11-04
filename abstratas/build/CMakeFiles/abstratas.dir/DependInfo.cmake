@@ -8,8 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/ambj/workspace/dca3303/abstratas/circulo.cpp" "CMakeFiles/abstratas.dir/circulo.cpp.o" "gcc" "CMakeFiles/abstratas.dir/circulo.cpp.o.d"
   "/home/ambj/workspace/dca3303/abstratas/figurageometrica.cpp" "CMakeFiles/abstratas.dir/figurageometrica.cpp.o" "gcc" "CMakeFiles/abstratas.dir/figurageometrica.cpp.o.d"
   "/home/ambj/workspace/dca3303/abstratas/main.cpp" "CMakeFiles/abstratas.dir/main.cpp.o" "gcc" "CMakeFiles/abstratas.dir/main.cpp.o.d"
+  "/home/ambj/workspace/dca3303/abstratas/reta.cpp" "CMakeFiles/abstratas.dir/reta.cpp.o" "gcc" "CMakeFiles/abstratas.dir/reta.cpp.o.d"
+  "/home/ambj/workspace/dca3303/abstratas/retangulo.cpp" "CMakeFiles/abstratas.dir/retangulo.cpp.o" "gcc" "CMakeFiles/abstratas.dir/retangulo.cpp.o.d"
   "" "abstratas" "gcc" "CMakeFiles/abstratas.dir/link.d"
   )
 

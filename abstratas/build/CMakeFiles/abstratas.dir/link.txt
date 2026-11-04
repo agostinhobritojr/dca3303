@@ -1,1 +1,1 @@
-/usr/bin/g++ -g -Wl,--dependency-file=CMakeFiles/abstratas.dir/link.d CMakeFiles/abstratas.dir/figurageometrica.cpp.o CMakeFiles/abstratas.dir/main.cpp.o -o abstratas
+/usr/bin/g++ -g -Wl,--dependency-file=CMakeFiles/abstratas.dir/link.d CMakeFiles/abstratas.dir/circulo.cpp.o CMakeFiles/abstratas.dir/figurageometrica.cpp.o CMakeFiles/abstratas.dir/main.cpp.o CMakeFiles/abstratas.dir/reta.cpp.o CMakeFiles/abstratas.dir/retangulo.cpp.o -o abstratas
