@@ -6,18 +6,18 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>644</width>
-    <height>438</height>
+    <width>769</width>
+    <height>508</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="pushButtonQuit">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>10</x>
       <y>180</y>
       <width>94</width>
       <height>26</height>
@@ -30,8 +30,8 @@
    <widget class="QSlider" name="horizontalSlider">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>40</y>
+      <x>160</x>
+      <y>90</y>
       <width>241</width>
       <height>16</height>
      </rect>
@@ -43,11 +43,57 @@
    <widget class="QLCDNumber" name="lcdNumber">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>20</y>
+      <x>450</x>
+      <y>60</y>
       <width>101</width>
       <height>61</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonMensagem">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>94</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mensagem!</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEditOrigem">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>220</y>
+      <width>201</width>
+      <height>241</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditDestino">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>220</y>
+      <width>161</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonCopia">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>320</y>
+      <width>94</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&gt;&gt;&gt;&gt;&gt;</string>
     </property>
    </widget>
   </widget>
@@ -56,7 +102,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>644</width>
+     <width>769</width>
      <height>23</height>
     </rect>
    </property>
@@ -83,24 +129,24 @@
    <slot>display(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>319</x>
-     <y>68</y>
+     <x>389</x>
+     <y>128</y>
     </hint>
     <hint type="destinationlabel">
-     <x>436</x>
-     <y>75</y>
+     <x>506</x>
+     <y>138</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>pushButton</sender>
+   <sender>pushButtonQuit</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>346</x>
-     <y>217</y>
+     <x>446</x>
+     <y>258</y>
     </hint>
     <hint type="destinationlabel">
      <x>488</x>
